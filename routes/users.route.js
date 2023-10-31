@@ -4,6 +4,7 @@ import db from "../mockdb";
 //Creating a sub route for our server to use
 const router = express.Router();
 
+
 router.get("/:id?", async (req, res, next) => {
   try {
     const { id } = req.params;
